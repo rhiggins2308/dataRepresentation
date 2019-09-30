@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library>
+    <catalogue type="technical">
+        <book>
+            <ISBN13>9781558607118</ISBN13>
+            <title>Querying XML</title>
+            <author>Jim Melton</author>
+            <author>Stephen Buxton</author>
+        </book>
+        <book>
+            <ISBN13>9780072224368</ISBN13>
+            <title>The Document Object Model: Processing Structured Documents</title>
+            <author>Joe Marini</author> 
+        </book>
+    </catalogue>
+    <catalogue type="cookery">
+        <book>
+            <ISBN13>9780241976005</ISBN13>
+            <title>The Fit Foodie</title>
+            <author>Derval O'Rourke</author> 
+        </book>
+        <book>
+            <ISBN13>9780718157807</ISBN13>
+            <title>Jamie's 15 Minute Meals</title>
+            <author>Jamie Oliver</author> 
+        </book>
+    </catalogue>
+</library>
