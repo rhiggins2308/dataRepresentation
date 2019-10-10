@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Representation - Exercise 2.5</title>
+    </head>
+    <body>
+        <div id="div1" style="background-color: royalblue">
+            <br/>
+            hello div 1<br/>
+            <button onClick="showDiv2()">Show Div 2</button>
+        </div>
+        <div id="div2" style="background-color: red; display: none;">
+            <br/>
+            hello div 2<br/>
+            <button onClick="showDiv1()">Show Div 1</button>
+        </div>
+
+        <script>
+            function showDiv2(){
+                document.getElementById("div1").style.display = "none";
+                document.getElementById("div2").style.display = "block";
+            }
+
+            function showDiv1(){
+                document.getElementById("div2").style.display = "none";
+                document.getElementById("div1").style.display = "block";
+            }
+        </script>
+    </body>
+</html>
