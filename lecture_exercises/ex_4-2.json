@@ -1,0 +1,32 @@
+{
+    "time":{
+        "updated":"Oct 21, 2019 16:50:00 UTC",
+        "updatedISO":"2019-10-21T16:50:00+00:00",
+        "updateduk":"Oct 21, 2019 at 17:50 BST"
+    },
+    "disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org",
+    "chartName":"Bitcoin",
+    "bpi":{
+        "USD":{
+            "code":"USD",
+            "symbol":"&#36;",
+            "rate":"8,190.0167",
+            "description":"United States Dollar",
+            "rate_float":8190.0167
+        },
+        "GBP":{
+            "code":"GBP",
+            "symbol":"&pound;",
+            "rate":"6,308.8845",
+            "description":"British Pound Sterling",
+            "rate_float":6308.8845
+        },
+        "EUR":{
+            "code":"EUR",
+            "symbol":"&euro;",
+            "rate":"7,348.5989",
+            "description":"Euro",
+            "rate_float":7348.5989
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "employees":[
+        {
+            "firstName": "John", 
+            "lastName": "Doe"
+        },
+        {
+            "firstName": "Anna",
+            "lastName": "Smith"
+        },
+        {
+            "firstName": "Peter",
+            "lastName": "Jones"
+        },
+        {
+            "firstName": "Anna",
+            "lastName": "Smith"
+        },
+        {
+            "firstName": "Robbie",
+            "lastName": "Higgins",
+            "address": "An Spidéal",
+            "age": 24
+        },
+        {
+            "firstName": "Máire",
+            "lastName": "Ní Chonghaile"
+        }
+    ]
+}
