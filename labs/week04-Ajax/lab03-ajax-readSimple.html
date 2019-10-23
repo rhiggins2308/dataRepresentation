@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>Lab 4-3: Read a Simple JSON using AJAX</title>
+    </head>
+    <body>
+        <button onclick="readJSON()">Go!</button>
+    </body>
+    <script>
+        function readJSON(){
+            $.ajax({
+                "url": "https://api.coindesk.com/v1/bpi/currentprice.json",
+                "method": "GET",
+                "data": "",
+                "dataType": "JSON",
+                "success": function(result){
+                    console.log(result);
+                    var rateEUR = result.bpi.EUR.rate;
+                    var rateUSD = result.bpi.USD.rate;
+                    var rateGBP = result.bpi.GBP.rate;
+                    console.log("1 Bitcoin = €" + rateEUR);
+                    console.log("1 Bitcoin = £" + rateGBP);
+                    console.log("1 Bitcoin = $" + rateUSD);
+                },
+                "error": function(xhr, status, error){
+                    console.log("error: " + status + " msg: " + error);
+                }
+            })
+        }    
+    </script>
+</html>
