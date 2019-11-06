@@ -1,28 +1,34 @@
 <html>
     <head>
-        <title>Test Get</title>
+        <title>Test Get All</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
-        <button onclick="getall()">Go</button>
+        <button onclick="getall()">get All</button>
+        <div id="output"></div>
+        <table>
+            <tr>
+                <th>reg</th><th>make</th><th>model</th><th>price</th><th></th><th></th>
+            </tr>
+        </table>
     </body>
     <script>
         function getall(){
             $.ajax({
-                url : "cars",
+                url : "http://127.0.0.1:500/cars",
                 method : "GET",
                 data : "",
                 dataType : "JSON",
                 success : function(result){
-                    //console.log(result);
-                    for (car of result.cars){
-                        console.log(car);
-                    }
+                    console.log(result);
+                    // for (car of result.cars){
+                    //     console.log(car);
+                    // }
                 },
                 error : function(xhr, status, error){
                     console.log("error "+status+" msg: "+error);
                 }
-        })
+            })
         }
     </script>
 </html>
